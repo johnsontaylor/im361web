@@ -11,6 +11,14 @@
       <p>You have {{ counter }} in your cart.</p>
       {{ message }}
       <p> {{userName}} <p>
+      <P> {{options}} <p>
+          <select v-model="selected">
+            <option disabled value="">Please select one</option>
+            <option>Pizza</option>
+            <option>Burgers</option>
+            <option>Sandwiches</option>
+          </select>
+<span>Selected: {{ selected }}</span>
     </div>
     <script src="dist/main.js" type="text/javascript"></script>
   </body>
