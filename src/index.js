@@ -7,8 +7,14 @@ var app = new Vue({
     counter: 0,
     userName: "Taylor",
     options: "What food category are you interested in?",
-    selected: "Please select from:"
-  }
+    selected: "Please select from:",
+        active: 'home'
+    },
+    methods: {
+        makeActive: function(item){
+            this.active = item;
+        }
+    }
 });
 
 window.app = app;
