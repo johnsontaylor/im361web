@@ -5,7 +5,7 @@ var app = new Vue({
   data: {
     message: 'Welcome to Chop Chop!',
     counter: 0,
-    userName: "Taylor",
+    userName: "User: Taylor",
     options: "What food category are you interested in?",
     selected: "Please select from:",
         active: 'home'
