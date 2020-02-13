@@ -1,0 +1,43 @@
+html {
+  background-color: blue;
+  font-size: 1em;
+}
+
+.ChopChop {
+  color: purple;
+}
+
+body {
+  color: yellow;
+  font-family: fantasy;
+}
+
+a {
+  font-family: cursive;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #dd0011;
+  color: #11dd01;
+}
+
+a:visited {
+  color: #00aa00;
+  }
+
+a:hover {
+  color: black;
+  font-size: 0.5em;
+}
+
+p {
+  background: purple;
+  margin: 1em;
+  padding: 0.5em;
+  color: rgba(255, 0, 0, 0.5);
+}
+
+footer {
+  margin: 1em;
+  border: solid 4px orange;
+  padding: 0.25em;
+}
