@@ -25,27 +25,28 @@ nav {
 }
 .home {
   color: #3A3A3D;
-  background-color: lightgrey;
-  text-align: center;
-  word-spacing: 40px
 }
+.home:hover {
+    color: Purple;
+}
+
 .projects {
   color: #3A3A3D;
-  text-align: center;
-  text-align: center;
-  word-spacing: 40px
+}
+.projects:hover {
+    color: Purple;
 }
 .services{
   color: #3A3A3D;
-  text-align: center;
-  text-align: center;
-  word-spacing: 40px
+}
+.services:hover {
+    color: Purple;
 }
 .contact{
   color: #3A3A3D;
-  text-align: center;
-  text-align: center;
-  word-spacing: 40px
+}
+.contact:hover {
+    color: Purple;
 }
 .cart {
   background-color: purple;
