@@ -3,16 +3,25 @@ html {
   font-size: 1em;
 }
 h1 {
-  color: orange;
-  font-family: 'Oswald', sans-serif;
-  margin: 1em;
-  padding: 0.25em;
-  border: solid 4px purple;
+  border: solid 10px purple;
   background-color: purple;
   text-align: center;
 }
+.ChopChop {
+  font-family: 'Oswald', sans-serif;
+  color: orange;
+}
+.ChopChop:hover {
+  color: white;
+}
+
 a:link {
   text-decoration: none;
+}
+nav {
+  background-color: lightgrey;
+  text-align: center;
+  word-spacing: 40px
 }
 .home {
   color: #3A3A3D;
