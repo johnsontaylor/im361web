@@ -106,6 +106,9 @@ body {
   opacity: 0.6;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.chickenoptions{
+  text-align: center;
+}
 .burgers {
   background-color: purple;
   border: none;
@@ -120,6 +123,9 @@ body {
 .burgers:hover {
   opacity: 0.6;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.burgersoptions{
+  text-align: center;
 }
 .pizza {
   background-color: purple;
@@ -136,6 +142,9 @@ body {
   opacity: 0.6;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.pizzaoptions{
+  text-align: center;
+}
 .sandwiches {
   background-color: purple;
   border: none;
@@ -151,6 +160,9 @@ body {
   opacity: 0.6;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+.sandwichesoptions{
+  text-align: center;
+}
 .sushi {
   background-color: purple;
   border: none;
@@ -165,6 +177,9 @@ body {
 .sushi:hover {
   opacity: 0.6;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.sushioptions{
+  text-align: center;
 }
 a {
   font-size: 2em;
