@@ -1,39 +1,42 @@
 html {
-  background-color: blue;
+  background-color: #F4F4F5;
   font-size: 1em;
 }
 
 .ChopChop {
-  color: purple;
+  font-family: 'Oswald', sans-serif;
+  color: orange;
+
+  background-color: purple;
+  width: 100%;
 }
 
+.home {
+  color: #3A3A3D;
+}
+
+
+
 body {
-  color: yellow;
-  font-family: fantasy;
+  font-family: 'Oswald', sans-serif;
 }
 
 a {
-  font-family: cursive;
   font-size: 2em;
-  font-weight: bold;
-  background-color: #dd0011;
-  color: #11dd01;
+  color: #black;
 }
 
 a:visited {
-  color: #00aa00;
+  color: black;
   }
 
 a:hover {
-  color: black;
-  font-size: 0.5em;
+  color: white;
 }
 
 p {
-  background: purple;
   margin: 1em;
   padding: 0.5em;
-  color: rgba(255, 0, 0, 0.5);
 }
 
 footer {
