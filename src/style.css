@@ -9,18 +9,24 @@ html {
   border: solid 4px purple;
   padding: 0.25em;
   background-color: purple;
+  text-align: center;
 }
 .home {
   color: #3A3A3D;
+  background-color: lightgrey;
+  text-align: center;
 }
 .projects {
   color: #3A3A3D;
+  text-align: center;
 }
 .services{
   color: #3A3A3D;
+  text-align: center;
 }
 .contact{
   color: #3A3A3D;
+  text-align: center;
 }
 body {
   font-family: 'Oswald', sans-serif;
