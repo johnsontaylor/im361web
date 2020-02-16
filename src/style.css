@@ -44,6 +44,9 @@ a:link {
 .search {
   align-items: center;
 }
+.username {
+  text-align: center;
+}
 body {
   font-family: 'Oswald', sans-serif;
 }
