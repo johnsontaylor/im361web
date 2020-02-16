@@ -2,36 +2,36 @@ html {
   background-color: #F4F4F5;
   font-size: 1em;
 }
-
 .ChopChop {
   font-family: 'Oswald', sans-serif;
   color: orange;
-
+  margin: 1em;
+  border: solid 4px purple;
+  padding: 0.25em;
   background-color: purple;
-  width: 100%;
 }
-
 .home {
   color: #3A3A3D;
 }
-
-
-
+.projects {
+  color: #3A3A3D;
+}
+.services{
+  color: #3A3A3D;
+}
+.contact{
+  color: #3A3A3D;
+}
 body {
   font-family: 'Oswald', sans-serif;
 }
 
 a {
   font-size: 2em;
-  color: #black;
+  color: Purple;
 }
-
-a:visited {
-  color: black;
-  }
-
 a:hover {
-  color: white;
+  color: Purple;
 }
 
 p {
@@ -43,4 +43,5 @@ footer {
   margin: 1em;
   border: solid 4px orange;
   padding: 0.25em;
+  background-color: orange;
 }
