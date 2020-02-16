@@ -23,14 +23,26 @@ a:link {
 .projects {
   color: #3A3A3D;
   text-align: center;
+  text-align: center;
+  word-spacing: 40px
 }
 .services{
   color: #3A3A3D;
   text-align: center;
+  text-align: center;
+  word-spacing: 40px
 }
 .contact{
   color: #3A3A3D;
   text-align: center;
+  text-align: center;
+  word-spacing: 40px
+}
+.cart {
+  align-items: center;
+}
+.search {
+  align-items: center;
 }
 body {
   font-family: 'Oswald', sans-serif;
@@ -50,6 +62,7 @@ p {
 }
 
 footer {
+  text-align: center;
   margin: 1em;
   border: solid 4px orange;
   padding: 0.25em;

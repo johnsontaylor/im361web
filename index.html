@@ -16,10 +16,9 @@
           <a href="#" class="services" v-on:click="makeActive('myplate')">MyPlate</a>
           <a href="#" class="contact" v-on:click="makeActive('account')">Account</a>
         </nav>
-          <p>You chose <b>{{active}}</b></p>
-          <button v-on:click="counter += 2">Cart</button>
-          <p>You have {{ counter }} in your cart.</p>
-          <button>Search</button>
+          <!--<p>You chose <b>{{active}}</b></p>-->
+          <button class="cart" v-on:click="counter += 2">Cart</button> <button class="search">Search</button>
+          <!--<p>You have {{ counter }} in your cart.</p>-->
           <p> {{userName}} </p>
         </header>
         <main>
@@ -77,23 +76,23 @@
                 </article>
         </main>
         <footer>
-          <h3>More Information</h3>
+          <h2>More Information</h2>
             <ul>
-                <li><a href="#">Order History</a></li>
-                <li><a href="#">Driver Reviews</a></li>
-                <li><a href="#">Find New Cuisine</a></li>
-                <li><a href="#">Upcoming Restaurants</a></li>
+                <ul><a href="#">Order History</a></ul>
+                <ul><a href="#">Driver Reviews</a></ul>
+                <ul><a href="#">Find New Cuisine</a></ul>
+                <ul><a href="#">Upcoming Restaurants</a></ul>
             </ul>
                 <p>More ways to order: <a href="#">Chop Chop Delivery Services</a> or <a href="#">other services</a> near you. Or call 1-800-CHOP-CHOP.</p>
                 <p>Copyright &copy; 2020 Chop Chop Inc. All rights reserved.</p>
                     <ul>
-                      <li>Privacy Policy</li>
-                      <li>Terms of Use</li>
-                      <li>Sales and Refunds</li>
-                      <li>Legal</li>
-                      <li>Site Map</li>
+                      <ul>Privacy Policy</ul>
+                      <ul>Terms of Use</ul>
+                      <ul>Sales and Refunds</ul>
+                      <ul>Legal</ul>
+                      <ul>Site Map</ul>
                     </ul>
-                    <p><a href="#">United States</a></p>
+                    <p>United States</p>
         </footer>
     </div>
     <script src="dist/main.js" type="text/javascript"></script>
