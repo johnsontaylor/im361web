@@ -39,13 +39,19 @@ a:link {
   word-spacing: 40px
 }
 .cart {
-  align-items: center;
+  justify-content: center;
 }
 .search {
-  align-items: center;
+  justify-content: center;
 }
 .username {
   text-align: center;
+}
+.options {
+  text-align: center;
+}
+.buttonoptions {
+  align-items: center;
 }
 body {
   font-family: 'Oswald', sans-serif;
