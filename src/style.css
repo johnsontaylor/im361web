@@ -3,11 +3,11 @@ html {
   font-size: 1em;
 }
 h1 {
-  text-decoration-color: orange;
+  color: orange;
   font-family: 'Oswald', sans-serif;
   margin: 1em;
-  border: solid 4px purple;
   padding: 0.25em;
+  border: solid 4px purple;
   background-color: purple;
   text-align: center;
 }
