@@ -11,10 +11,14 @@ html {
   background-color: purple;
   text-align: center;
 }
+a:link {
+  text-decoration: none;
+}
 .home {
   color: #3A3A3D;
   background-color: lightgrey;
   text-align: center;
+  word-spacing: 40px
 }
 .projects {
   color: #3A3A3D;
