@@ -19,7 +19,6 @@
           <!--<p>You chose <b>{{active}}</b></p>-->
           <button class="cart" v-on:click="counter += 2">Cart</button> <button class="search">Search</button>
            <p class="username">{{userName}}</p>
-           <p>You have {{ foodItem }} in your cart.</p>
           <!--<p>You have {{ counter }} in your cart.</p>-->
         </header>
         <main>
@@ -34,7 +33,7 @@
           </select>
             <span>Selected: {{ selected }}</span>
                 <article>
-                    <button class="chicken" v-on:click"foodItem.append(foodItem)"><h2>Chicken</h2></button>
+                    <button class="chicken"><h2>Chicken</h2></button>
                     <div class="chickenoptions">
                       <h3><p>McDonalds</p></h3>
                       <h4><p>10 Piece</p></h4>
