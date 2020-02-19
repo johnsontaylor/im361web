@@ -9,12 +9,24 @@ var app = new Vue({
     userName: "User: Taylor",
     options: "What food category are you interested in?",
     selected: "Please select from:",
-        active: 'home'
+        active: 'home',
+
+      foodItem: "purchase",
+       foodTypes: [
+         "chicken",
+         "burgers",
+         "pizza",
+         "sandwiches",
+         "sushi"
     },
     methods: {
-        makeActive: function(item){
+        makeActive: function(item) {
             this.active = item;
-        }
+        },
+        methods: {
+            makeActive: function(foodItem) {
+                this.active = foodItem;
+            },
     }
 });
 
