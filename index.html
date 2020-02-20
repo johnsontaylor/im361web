@@ -17,7 +17,10 @@
           <a href="#" class="contact" v-on:click="makeActive('account')">Account</a>
         </nav>
           <!--<p>You chose <b>{{active}}</b></p>-->
-          <button class="cart" v-on:click="counter += 2">Cart</button> <button class="search">Search</button>
+          <button class="cart" v-on:click="counter += 2">Cart ({{ cart.length }})</button> <button class="search">Search</button>
+          <ul>
+            <li v-for="foodItem in cart">{{ foodItem }}</li>
+          </ul>
            <p class="username">{{userName}}</p>
           <!--<p>You have {{ counter }} in your cart.</p>-->
         </header>
@@ -33,7 +36,7 @@
           </select>
             <span>Selected: {{ selected }}</span>
                 <article>
-                    <button class="chicken"><h2>Chicken</h2></button>
+                    <button v-on:click="cart.push('chicken')" class="chicken"><h2>Chicken</h2></button>
                     <div class="chickenoptions">
                       <h3><p>McDonalds</p></h3>
                       <h4><p>10 Piece</p></h4>
@@ -43,7 +46,7 @@
                           <ul>5 Minutes</ul>
                         </ul>
                       </div>
-                    <button class="burgers"><h2>Burgers</h2></button>
+                    <button v-on:click="cart.push('burgers')" class="burgers"><h2>Burgers</h2></button>
                     <div class="burgersoptions">
                       <h3><p>Burger King</p></h3>
                       <h4><p>Double</p></h4>
@@ -53,7 +56,7 @@
                           <ul>4 Minutes</ul>
                         </ul>
                         </div>
-                    <button class="pizza"><h2>Pizza</h2></button>
+                    <button v-on:click="cart.push('pizza')" class="pizza"><h2>Pizza</h2></button>
                     <div class="pizzaoptions">
                     <h3><p>Domino's</p></h3>
                     <h4><p>Large Cheese</p></h4>
@@ -63,7 +66,7 @@
                         <ul>14 Minutes</ul>
                       </ul>
                       </div>
-                    <button class="sandwiches"><h2>Sandwiches</h2></button>
+                    <button v-on:click="cart.push('sandwiches')" class="sandwiches"><h2>Sandwiches</h2></button>
                     <div class="sandwichesoptions">
                     <h3><p>Jimmy John's</p></h3>
                     <h4><p>Turkey Tom</p></h4>
@@ -73,7 +76,7 @@
                         <ul>9 Minutes</ul>
                       </ul>
                       </div>
-                    <button class="sushi"><h2>Sushi</h2></button>
+                    <button v-on:click="cart.push('sushi')" class="sushi"><h2>Sushi</h2></button>
                     <div class="sushioptions">
                     <h3><p>Shogun</p></h3>
                     <h4><p>California Roll</p></h4>
