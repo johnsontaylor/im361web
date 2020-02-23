@@ -105,6 +105,16 @@ body {
 .chicken:hover {
   opacity: 0.6;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  animation-duration: 2s;
+  animation: fadein;
+}
+@keyframes fadein {
+  from {
+    opactiy: 0;
+  }
+  to {
+    opacity: inherit;
+  }
 }
 .chickenoptions {
   text-align: center;
