@@ -28,11 +28,11 @@
         <p class="options"> {{options}} </p> <!--https://vuejs.org/v2/guide/forms.html-->
           <select v-model="selected">
             <option class="buttonoptions" disabled value="">Please select one</option>
-            <option>Chicken</option>
-            <option>Burgers</option>
-            <option>Pizza</option>
-            <option>Sandwiches</option>
-            <option>Sushi</option>
+            <option v-on:click="cart.push('chicken')">Chicken</option>
+            <option v-on:select="cart.push('burgers')">Burgers</option>
+            <option v-on:select="cart.push('pizza')">Pizza</option>
+            <option v-on:select="cart.push('sandwiches')">Sandwiches</option>
+            <option v-on:select="cart.push('sushi')">Sushi</option>
           </select>
             <span>Selected: {{ selected }}</span>
                 <article>
