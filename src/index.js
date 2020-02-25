@@ -9,6 +9,7 @@ var app = new Vue({
     counter: 0,
     userName: "User: Taylor",
     options: "What food category are you interested in?",
+    tip: "Add a tip",
     selected: "Please select from:",
         active: 'home',
     cart: [],

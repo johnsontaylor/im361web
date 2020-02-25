@@ -128,6 +128,17 @@ body {
 .chickenoptions {
   text-align: center;
 }
+.myPlateChicken {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 50%;
+}
 .burgers {
   background-color: purple;
   border: none;
@@ -166,6 +177,17 @@ body {
 .pizzaoptions {
   text-align: center;
 }
+.myPlatePizza {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 50%;
+}
 .sandwiches {
   background-color: purple;
   border: none;
@@ -203,6 +225,17 @@ body {
 }
 .sushioptions {
   text-align: center;
+}
+.payNow {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
 }
 a {
   font-size: 2em;
