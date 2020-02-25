@@ -109,7 +109,6 @@ body {
 }
 .chickenImage {
   width: 100%;
-  padding: 15px 32px;
   display: inline-block;
 }
 .chicken:hover {
