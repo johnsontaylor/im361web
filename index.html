@@ -11,10 +11,10 @@
       <header>
         <h1><a href="#" class="ChopChop">{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"></h1>
         <nav v-bind:class="active" v-on:click.prevent> <!--https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js-->
-          <a href="#home" class="home" v-on:click="pageName = ('home')" v-on:click="makeActive('home')">Home</a>
-          <a href="#" class="projects" v-on:click="pageName = ('restaurants')" v-on:click="makeActive('restaurants')">Restaurants</a>
-          <a href="#" class="services" v-on:click="makeActive('myplate')">MyPlate</a>
-          <a href="#" class="contact" v-on:click="makeActive('account')">Account</a>
+          <a href="#home" class="home" v-on:click="pageName = 'home'" v-on:click="makeActive('home')">Home</a>
+          <a href="#restaurants" class="projects" v-on:click="pageName = 'restaurants'" v-on:click="makeActive('restaurants')">Restaurants</a>
+          <a href="#myplate" class="services" v-on:click="pageName = 'myplate'" v-on:click="makeActive('myplate')">MyPlate</a>
+          <a href="#account" class="contact" v-on:click="pageName = 'account'" v-on:click="makeActive('account')">Account</a>
         </nav>
           <!--<p>You chose <b>{{active}}</b></p>-->
           <button class="cart" v-on:click="counter += 2">Cart ({{ cart.length }})</button> <button class="search">Search</button>
@@ -90,9 +90,25 @@
                 </article>
         </main>
         <!-- Second page -->
-    <main v-bind:hidden="pageName != 'restaurants'">
+  <main v-bind:hidden="pageName != 'restaurants'">
       <p>Name of Restaurants</p>
-    </main>
+  </main>
+  <main v-bind:hidden="pageName != 'myplate'">
+      <button>
+        <div class="myPlateChicken">
+          <h3><p>McDonalds</p></h3>
+          <h4><p>10 Piece</p></h4>
+            <ul>
+              <ul>Doordash</ul>
+              <ul>$8</ul>
+              <ul>5 Minutes</ul>
+            </ul>
+          </div>
+        <button>
+  </main>
+  <main v-bind:hidden="pageName != 'account'">
+      <p>Account</p>
+  </main>
         <footer>
           <h2>More Information</h2>
             <ul>
