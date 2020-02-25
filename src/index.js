@@ -10,7 +10,8 @@ var app = new Vue({
     options: "What food category are you interested in?",
     selected: "Please select from:",
         active: 'home',
-    cart: []
+    cart: [],
+    complaints: []
     },
     methods: {
         makeActive: function(item){

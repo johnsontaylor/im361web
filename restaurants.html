@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chop Chop</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1><a href="#" class="ChopChop">{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"></h1>
+        <nav v-bind:class="active" v-on:click.prevent> <!--https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js-->
+          <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
+          <a href="restaurants.html" class="projects" v-on:click="makeActive('restaurants')">Restaurants</a>
+          <a href="#" class="services" v-on:click="makeActive('myplate')">MyPlate</a>
+          <a href="#" class="contact" v-on:click="makeActive('account')">Account</a>
+        </nav>
+      </header>
+      <main>
+      <p class="options"> {{options}} </p> <!--https://vuejs.org/v2/guide/forms.html-->
+        <select v-model="selected">
+          <option class="buttonoptions" disabled value="">Please select one</option>
+          <option>Chicken</option>
+          <option>Burgers</option>
+          <option>Pizza</option>
+          <option>Sandwiches</option>
+          <option>Sushi</option>
+          </main>
