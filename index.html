@@ -11,8 +11,8 @@
       <header>
         <h1><a href="#" class="ChopChop">{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"></h1>
         <nav v-bind:class="active" v-on:click.prevent> <!--https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js-->
-          <a href="#" class="home" v-on:click="makeActive('home')">Home</a>
-          <a href="#" class="projects" v-on:click="makeActive('restaurants')">Restaurants</a>
+          <a href="#home" class="home" v-on:click="pageName = ('home')" v-on:click="makeActive('home')">Home</a>
+          <a href="#" class="projects" v-on:click="pageName = ('restaurants')" v-on:click="makeActive('restaurants')">Restaurants</a>
           <a href="#" class="services" v-on:click="makeActive('myplate')">MyPlate</a>
           <a href="#" class="contact" v-on:click="makeActive('account')">Account</a>
         </nav>
@@ -24,7 +24,8 @@
            <p class="username">{{userName}}</p>
           <!--<p>You have {{ counter }} in your cart.</p>-->
         </header>
-        <main>
+        <!--First Page-->
+        <main v-bind:hidden="pageName != 'home'">
         <p class="options"> {{options}} </p> <!--https://vuejs.org/v2/guide/forms.html-->
           <select v-model="selected">
             <option class="buttonoptions" disabled value="">Please select one</option>
@@ -88,6 +89,10 @@
                       </div>
                 </article>
         </main>
+        <!-- Second page -->
+    <main v-bind:hidden="pageName != 'restaurants'">
+      <p>Name of Restaurants</p>
+    </main>
         <footer>
           <h2>More Information</h2>
             <ul>
