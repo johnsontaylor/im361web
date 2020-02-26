@@ -13,7 +13,8 @@ var app = new Vue({
     selected: "Please select from:",
         active: 'home',
     cart: [],
-    complaints: []
+    complaints: [],
+    vuedropdown: [],
     },
     methods: {
         makeActive: function(item){
