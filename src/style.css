@@ -12,6 +12,11 @@ h1 {
   background-color: purple;
   text-align: center;
 }
+.search {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+}
 .ChopChop {
   background-image: url("./images/chopChopLogo.png");
   background-repeat: no-repeat;
