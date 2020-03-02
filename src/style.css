@@ -30,6 +30,7 @@ a:link {
   text-decoration: none;
 }
 nav {
+  padding-top: 0px;
   background-color: lightgrey;
   text-align: center;
   word-spacing: 40px
