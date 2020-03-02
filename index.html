@@ -9,7 +9,7 @@
   <body>
     <div id="app">
       <header>
-        <h1><a href="#" class="ChopChop">{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"></h1>
+        <h1><a href="#" class="ChopChop"><{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"> <!--<img class="chopChopLogo" src="./images/chopChopLogo.png">--></h1>
         <nav v-bind:class="active" v-on:click.prevent> <!--https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js-->
           <a href="#home" class="home" v-on:click="pageName = 'home'" v-on:click="makeActive('home')">Home</a>
           <a href="#restaurants" class="projects" v-on:click="pageName = 'restaurants'" v-on:click="makeActive('restaurants')">Restaurants</a>
@@ -37,7 +37,7 @@
           </select>
             <span>Selected: {{ selected }}</span>
                 <article>
-                    <button v-on:click="cart.push('chicken')" class="chicken"> <img class="chickenImage" src="./images/chickenNuggetsImage.jpg"><h2>Chicken</h2></button>
+                    <button v-on:click="cart.push('chicken')" class="chicken"> <!--<img class="chickenImage" src="./images/chickenNuggetsImage.jpg">--><h2>Chicken</h2></button>
                     <div class="chickenoptions">
                       <h3><p>McDonalds</p></h3>
                       <h4><p>10 Piece</p></h4>

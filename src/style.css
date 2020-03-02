@@ -13,11 +13,13 @@ h1 {
   text-align: center;
 }
 .ChopChop {
-  font-family: 'Oswald', sans-serif;
-  color: orange;
-}
-.ChopChop:hover {
-  color: white;
+  background-image: url("./images/chopChopLogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /*box-shadow: 0px 0px 5px #fff;*/
+  height: 527px;
+  width: 400px;
 }
 a:link {
   text-decoration: none;
@@ -97,11 +99,16 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 .chicken {
+  background-image: url("./images/chickenNuggetsImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: purple;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 32px 32px;
   text-align: center;
+  text-shadow: 2px 2px #000000;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -128,24 +135,33 @@ body {
   text-align: center;
 }
 .myPlateChicken {
+  background-image: url("./images/chickenNuggetsImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: grey;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 32px 32px;
   align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 50%;
+  width: 100%;
 }
 .burgers {
+  background-image: url("./images/burgerImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: purple;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 32px 32px;
+  text-shadow: 2px 2px #000000;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -161,10 +177,15 @@ body {
   text-align: center;
 }
 .pizza {
+  background-image: url("./images/pizzaImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: purple;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 32px 32px;
+  text-shadow: 2px 2px #000000;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -180,21 +201,30 @@ body {
   text-align: center;
 }
 .myPlatePizza {
+  background-image: url("./images/pizzaImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: grey;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 32px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  width: 50%;
+  width: 100%;
 }
 .sandwiches {
+  background-image: url("./images/sandwichImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: purple;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 32px 32px;
+  text-shadow: 2px 2px #000000;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -210,10 +240,15 @@ body {
   text-align: center;
 }
 .sushi {
+  background-image: url("./images/sushiImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: purple;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 32px 32px;
+  text-shadow: 2px 2px #000000;
   text-align: center;
   text-decoration: none;
   display: inline-block;
