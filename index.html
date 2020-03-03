@@ -9,7 +9,8 @@
   <body>
     <div id="app">
       <header>
-        <h1><a href="#" class="ChopChop"><{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"> <!--<img class="chopChopLogo" src="./images/chopChopLogo.png">--></h1>
+      <div class="imageWrap"><img class="ChopChop" src="./images/chopChopLogo.png"></div>
+        <!--<h1><a href="#" class="ChopChop"><{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"> <img class="chopChopLogo" src="./images/chopChopLogo.png"</h1>-->
         <nav v-bind:class="active" v-on:click.prevent> <!--https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js-->
           <a href="#home" class="home" v-on:click="pageName = 'home'" v-on:click="makeActive('home')">Home</a>
           <a href="#restaurants" class="projects" v-on:click="pageName = 'restaurants'" v-on:click="makeActive('restaurants')">Restaurants</a>
@@ -17,10 +18,10 @@
           <a href="#account" class="contact" v-on:click="pageName = 'account'" v-on:click="makeActive('account')">Account</a>
         </nav>
           <!--<p>You chose <b>{{active}}</b></p>-->
-          <button class="cart" v-on:click="counter += 2">Cart ({{ cart.length }})</button> <button class="search">Search</button>
-          <ul>
+          <button class="cart" v-on:click="pageName = 'myplate'">Plate ({{ cart.length }})</button> <button class="search">Search</button>
+          <!--<ul>
             <li v-for="foodItem in cart">{{ foodItem }}</li>
-          </ul>
+          </ul>-->
            <p class="username">{{userName}}</p>
           <!--<p>You have {{ counter }} in your cart.</p>-->
         </header>
@@ -37,6 +38,19 @@
           </select>
             <span>Selected: {{ selected }}</span>
                 <article>
+                  <ul>
+                    <li v-for="potentialOrderItem in itemsUserCanOrder">
+                      <button v-on:click="addToMyPlate(potentialOrderItem)" class="myPlateChicken">
+                          <h3>{{ potentialOrderItem.restaurant }}</h3>
+                          <h4>{{ potentialOrderItem.size }}</h4>
+                            <ul>
+                              <li>Delivered By: {{ potentialOrderItem.deliveryService }}</li>
+                              <li>&#36;{{ potentialOrderItem.price }}</li>
+                              <li>{{ potentialOrderItem.deliveryTime }} Minutes</li>
+                            </ul>
+                        </button>
+                    </li>
+                  </ul>
                     <button v-on:click="cart.push('chicken')" class="chicken"> <!--<img class="chickenImage" src="./images/chickenNuggetsImage.jpg">--><h2>Chicken</h2></button>
                     <div class="chickenoptions">
                       <h3><p>McDonalds</p></h3>
@@ -97,24 +111,19 @@
       <button class="myPlateHeading">
         My Plate
       </button>
-      <button class="myPlateChicken">
-          <h3><p>McDonalds</p></h3>
-          <h4><p>10 Piece</p></h4>
-            <ul>
-              <ul>Doordash</ul>
-              <ul>$8</ul>
-              <ul>5 Minutes</ul>
-            </ul>
-        </button>
-        <button class="myPlatePizza">
-          <h3><p>Domino's</p></h3>
-          <h4><p>Large Cheese</p></h4>
-            <ul>
-              <ul>Uber Eats</ul>
-              <ul>$11</ul>
-              <ul>14 Minutes</ul>
-            </ul>
-        </button>
+      <ul>
+        <li v-for="potentialOrderItem in cart">
+          <button v-on:click="addToMyPlate(potentialOrderItem)" class="myPlateChicken" style="{background-image: `${potentialOrderItem.image}`}">
+              <h3>{{ potentialOrderItem.restaurant }}</h3>
+              <h4>{{ potentialOrderItem.size }}</h4>
+                <ul>
+                  <li>Delivered By: {{ potentialOrderItem.deliveryService }}</li>
+                  <li>&#36;{{ potentialOrderItem.price }}</li>
+                  <li>{{ potentialOrderItem.deliveryTime }} Minutes</li>
+                </ul>
+            </button>
+        </li>
+      </ul>
           <p class="tip"> {{tip}} </p> <!--add a tip-->
             <select v-model="selected">
               <option class="buttonoptions" disabled value="">Please Add a Tip</option>
@@ -122,7 +131,7 @@
               <option>$4</option>
               <option>$5</option>
             </select>
-        <button v-on:click="cart.push('Payment Complete')" class="payNow"> <!-- added a checkout-->
+        <button v-on:click="clearCart" class="payNow"> <!-- added a checkout-->
         Pay Now:
         </button>
   </main>
