@@ -129,6 +129,7 @@ body {
   display: inline-block;
   font-size: 16px;
   width: 100%;
+  margin-bottom: 10px;
 }
 .chickenImage {
   width: 100%;
@@ -183,6 +184,7 @@ body {
   display: inline-block;
   font-size: 16px;
   width: 100%;
+  margin-bottom: 10px
 }
 .burgers:hover {
   opacity: 0.6;
@@ -207,6 +209,7 @@ body {
   display: inline-block;
   font-size: 16px;
   width: 100%;
+  margin-bottom: 10px
 }
 .pizza:hover {
   opacity: 0.6;
@@ -246,6 +249,7 @@ body {
   display: inline-block;
   font-size: 16px;
   width: 100%;
+  margin-bottom: 10px
 }
 .sandwiches:hover {
   opacity: 0.6;
@@ -270,6 +274,7 @@ body {
   display: inline-block;
   font-size: 16px;
   width: 100%;
+  margin-bottom: 10px
 }
 .sushi:hover {
   opacity: 0.6;
