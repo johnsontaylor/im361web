@@ -41,6 +41,7 @@
                   <ul>
                     <li v-for="potentialOrderItem in itemsUserCanOrder">
                       <button v-on:click="addToMyPlate(potentialOrderItem)" class="myPlateChicken">
+                          <h2>{{ potentialOrderItem.foodType }}</h2>
                           <h3>{{ potentialOrderItem.restaurant }}</h3>
                           <h4>{{ potentialOrderItem.size }}</h4>
                             <ul>

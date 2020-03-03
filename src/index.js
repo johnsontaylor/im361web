@@ -17,8 +17,8 @@ var app = new Vue({
     vuedropdown: [],
     itemsUserCanOrder: [
       {
-        restaurant: "McDonalds",
         foodType: "Chicken",
+        restaurant: "McDonalds",
         size: "10 Piece",
         deliveryService: "Doordash",
         price: 8,
@@ -26,14 +26,41 @@ var app = new Vue({
         image: "images/chickenNuggetsImage.jpg"
       },
       {
-        restaurant: "Domino's",
+        foodType: "Burgers",
+        restaurant: "Burger King",
+        size: "Double",
+        deliveryService: "Postmates",
+        price: 2,
+        deliveryTime: 4,
+        image: "images/burgerImage.jpg"
+      },
+      {
         foodType: "Pizza",
+        restaurant: "Domino's",
         size: "Large Cheese",
         deliveryService: "Uber Eats",
         price: 11,
         deliveryTime: 15,
-        image: "images/burgerImage.jpg"
-      }
+        image: "images/pizzaImage.jpg"
+      },
+      {
+        foodType: "Sandwiches",
+        restaurant: "Jimmy John's",
+        size: "Turkey Tom",
+        deliveryService: "Grubhub",
+        price: 7.50,
+        deliveryTime: 9,
+        image: "images/sandwichImage.jpg"
+      },
+      {
+        foodType: "Sushi",
+        restaurant: "Shogun",
+        size: "California Roll",
+        deliveryService: "Doordash",
+        price: 6.75,
+        deliveryTime: 13,
+        image: "images/sushiImage.jpg"
+      },
     ],
     },
     methods: {
