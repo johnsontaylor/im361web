@@ -7,12 +7,17 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+ul {
+  text-align: center;
+}
 li {
   list-style: none;
+  text-align: center;
 }
 h1 {
-  border: solid 10px purple;
-  background-color: purple;
+  /*border: solid 10px purple;
+  background-color: purple;*/
+  text-shadow: 2px 2px #000000;
   text-align: center;
 }
 .search {
