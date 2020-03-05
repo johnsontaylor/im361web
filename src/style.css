@@ -325,9 +325,8 @@ p {
 }
 
 footer {
+  margin-top: 0;
   text-align: center;
-  margin: 1em;
   border: solid 4px orange;
-  padding: 0.25em;
   background-color: orange;
 }
