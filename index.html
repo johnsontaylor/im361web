@@ -22,7 +22,7 @@
           <!--<ul>
             <li v-for="foodItem in cart">{{ foodItem }}</li>
           </ul>-->
-           <p class="username">{{userName}}</p>
+           <h3 class="username">{{userName}}</h3>
           <!--<p>You have {{ counter }} in your cart.</p>-->
         </header>
         <!--First Page-->
@@ -59,8 +59,9 @@
       <p>Name of Restaurants</p>
   </main>
   <main v-bind:hidden="pageName != 'myplate'">
+      <p class="checkout"> {{checkout}} </p>
       <button class="myPlateHeading">
-        My Plate
+        <h3 class="heading">My Plate<h3>
       </button>
       <ul>
         <li v-for="potentialOrderItem in cart">
@@ -83,7 +84,7 @@
               <option>$5</option>
             </select>
         <button v-on:click="clearCart" class="payNow"> <!-- added a checkout-->
-        Pay Now:
+        <h2 class="heading">Pay Now</h2>
         </button>
   </main>
   <main v-bind:hidden="pageName != 'account'">
