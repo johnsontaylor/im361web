@@ -49,7 +49,7 @@ var app = new Vue({
         restaurant: "Jimmy John's",
         size: "Turkey Tom",
         deliveryService: "Grubhub",
-        price: 7.50,
+        price: 7.55,
         deliveryTime: 9,
         image: "images/sandwichImage.jpg"
       },
