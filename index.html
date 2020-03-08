@@ -29,7 +29,7 @@
         <main v-bind:hidden="pageName != 'home'">
         <p class="options"> {{options}} </p> <!--https://vuejs.org/v2/guide/forms.html-->
           <select v-model="cart">
-            <option class="buttonoptions" disabled value="">Please select one</option>
+          <option class="buttonoptions" disabled value="">Please select one</option>
             <option v-on:select="cart.push('chicken')">Chicken</option>
             <option v-on:select="cart.push('burgers')">Burgers</option>
             <option v-on:select="cart.push('pizza')">Pizza</option>
@@ -56,7 +56,6 @@
         </main>
         <!-- Second page -->
   <main v-bind:hidden="pageName != 'restaurants'">
-      <p>Name of Restaurants</p>
       <div class="McDonaldsRestaurants"></div>
       <div class="BurgerKingRestaurants"></div>
       <div class="DominosRestaurants"></div>
