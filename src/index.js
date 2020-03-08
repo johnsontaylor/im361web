@@ -29,7 +29,7 @@ var app = new Vue({
       {
         foodType: "Burgers",
         restaurant: "Burger King",
-        size: "Double",
+        size: "Double Cheeseburger",
         deliveryService: "Postmates",
         price: 2,
         deliveryTime: 4,
