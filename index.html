@@ -90,9 +90,14 @@
         <h2 class="heading">Pay Now</h2>
         </button>
   </main>
-  <main v-bind:hidden="pageName != 'account'">
-    <div class="accountContainer">
-      <div class="accountSignIn"></div>
+  <main class="accountContainer" v-bind:hidden="pageName != 'account'">
+    <div class="accountSignIn">
+      <h2>Sign In<h2>
+      <h6>New to ChopChop? <span class="signUp">Sign Up</span></h6>
+      <div class="facebookSignIn"></div>
+      <div class="googleSignIn"></div>
+      <hr></hr>
+      <h6>continue with email</h6>
     </div>
   </main>
         <footer>
