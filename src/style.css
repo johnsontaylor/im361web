@@ -26,6 +26,7 @@ h1 {
   color: #F48E22;
 }
 h6 {
+  margin-top: 0;
   font-size: 1em;
   font-weight: lighter;
   color: #8C8C8C;
@@ -365,12 +366,6 @@ body {
   margin-bottom: 20px;
   width: 800px;
   height: 800px;
-}
-.facebookSignIn {
-  background-image: url("./images/");
-}
-.googleSignIn {
-  background-image: url("./images/");
 }
 a {
   font-size: 2em;
