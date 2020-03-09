@@ -28,15 +28,15 @@
         <!--First Page-->
         <main v-bind:hidden="pageName != 'home'">
         <p class="options"> {{options}} </p> <!--https://vuejs.org/v2/guide/forms.html-->
-          <select v-model="cart">
-          <option class="buttonoptions" disabled value="">Please select one</option>
+          <!-- <select v-model="cart">
+            <option class="buttonoptions" disabled value="">Please select one</option>
             <option v-on:select="cart.push('chicken')">Chicken</option>
             <option v-on:select="cart.push('burgers')">Burgers</option>
             <option v-on:select="cart.push('pizza')">Pizza</option>
             <option v-on:select="cart.push('sandwiches')">Sandwiches</option>
             <option v-on:select="cart.push('sushi')">Sushi</option>
           </select>
-            <span>Selected: {{ selected }}</span>
+            <span>Selected: {{ selected }}</span> -->
                 <article>
                   <ul>
                     <li v-for="potentialOrderItem in itemsUserCanOrder">
@@ -56,17 +56,16 @@
         </main>
         <!-- Second page -->
   <main v-bind:hidden="pageName != 'restaurants'">
-      <div class="McDonaldsRestaurants"></div>
-      <div class="BurgerKingRestaurants"></div>
-      <div class="DominosRestaurants"></div>
-      <div class="JJRestaurants"></div>
-      <div class="ShogunRestaurants"></div>
+    <div class="restaurantsContainer">
+      <div class="McDonalds Restaurants"></div>
+      <div class="BurgerKing Restaurants"></div>
+      <div class="Dominos Restaurants"></div>
+      <div class="JJ Restaurants"></div>
+      <div class="Shogun Restaurants"></div>
+    </div>
   </main>
   <main v-bind:hidden="pageName != 'myplate'">
       <p class="checkout"> {{checkout}} </p>
-      <button class="myPlateHeading">
-        <h3 class="heading">My Plate<h3>
-      </button>
       <ul>
         <li v-for="potentialOrderItem in cart">
           <button v-on:click="addToMyPlate(potentialOrderItem)" v-bind:style="{backgroundImage:'url('+potentialOrderItem.image+')'}" class="myPlateItem">
@@ -92,7 +91,9 @@
         </button>
   </main>
   <main v-bind:hidden="pageName != 'account'">
+    <div class="accountContainer">
       <div class="accountSignIn"></div>
+    </div>
   </main>
         <footer>
           <h2>More Information</h2>

@@ -11,7 +11,7 @@ var app = new Vue({
     options: "Click on food option to add to plate",
     checkout: "Scroll down to pay now",
     tip: "Add a tip",
-    selected: "Please select from:",
+    // selected: "Please select from:",
         active: 'home',
     cart: [],
     complaints: [],
