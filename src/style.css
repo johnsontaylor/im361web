@@ -50,6 +50,10 @@ h1 {
 .facebookGoogle {
   margin-bottom: 30px;
 }
+.signInButtonAccount {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 h6 {
   margin-top: 0;
   font-size: 1em;
@@ -259,8 +263,8 @@ body {
   padding: 32px 32px;
   display: inline-block;
   margin-bottom: 20px;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
 }
 a {
   font-size: 2em;
