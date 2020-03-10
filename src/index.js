@@ -9,7 +9,7 @@ var app = new Vue({
     counter: 0,
     // userName: "User: Taylor",
     // options: "Click on food option to add to plate",
-    checkout: "Scroll down to pay now",
+    // checkout: "Scroll down to pay now",
     tip: "Add a tip",
     // selected: "Please select from:",
         active: 'home',

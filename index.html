@@ -70,7 +70,7 @@
     </div>
   </main>
   <main v-bind:hidden="pageName != 'myplate'">
-      <p class="checkout"> {{checkout}} </p>
+      <!-- <p class="checkout"> {{checkout}} </p> -->
       <ul>
         <li v-for="potentialOrderItem in cart">
           <button v-on:click="addToMyPlate(potentialOrderItem)" v-bind:style="{backgroundImage:'url('+potentialOrderItem.image+')'}" class="myPlateItem">
