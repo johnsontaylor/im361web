@@ -64,9 +64,11 @@ h6 {
   text-align: center;
 }
 .cart {
+  border-radius: 25px;
   margin-left: 10px;
 }
 .search {
+  border-radius: 25px;
   padding-inline-start: 0;
   display: flex;
   justify-content: space-between;
