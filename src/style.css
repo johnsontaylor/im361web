@@ -31,6 +31,9 @@ h6 {
   font-weight: lighter;
   color: #8C8C8C;
 }
+.buttonAlignSearch {
+  text-align: right;
+}
 .search {
   padding-inline-start: 0;
   display: flex;
