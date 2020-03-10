@@ -143,28 +143,6 @@ nav {
 body {
   font-family: 'Oswald', sans-serif;
 }
-.chicken {
-  background-image: url("./images/chickenNuggetsImage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: purple;
-  border: none;
-  color: white;
-  padding: 32px 32px;
-  text-align: center;
-  text-shadow: 2px 2px #000000;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-.chickenImage {
-  width: 100%;
-  display: inline-block;
-}
 .myPlateItem:hover {
   opacity: 0.6;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -177,9 +155,6 @@ body {
   to {
     opacity: 1;
   }
-}
-.chickenoptions {
-  text-align: center;
 }
 .myPlateItem {
   background-repeat: no-repeat;
@@ -202,127 +177,14 @@ body {
   margin-bottom: 10px;
   margin-top: 5px;
 }
-
-.burgers {
-  background-image: url("./images/burgerImage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: purple;
-  border: none;
-  color: white;
-  padding: 32px 32px;
-  text-shadow: 2px 2px #000000;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px
-}
-.burgers:hover {
-  opacity: 0.6;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  animation: fadeIn 2s;
-}
-.burgersoptions {
-  text-align: center;
-}
-.pizza {
-  background-image: url("./images/pizzaImage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: purple;
-  border: none;
-  color: white;
-  padding: 32px 32px;
-  text-shadow: 2px 2px #000000;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px
-}
-.pizza:hover {
-  opacity: 0.6;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  animation: fadeIn 2s;
-}
-.pizzaoptions {
-  text-align: center;
-}
-.myPlatePizza {
-  background-image: url("./images/pizzaImage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: grey;
-  border: none;
-  color: white;
-  padding: 32px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
-}
-.sandwiches {
-  background-image: url("./images/sandwichImage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: purple;
-  border: none;
-  color: white;
-  padding: 32px 32px;
-  text-shadow: 2px 2px #000000;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px
-}
-.sandwiches:hover {
-  opacity: 0.6;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  animation: fadeIn 2s;
-}
-.sandwichesoptions {
-  text-align: center;
-}
-.sushi {
-  background-image: url("./images/sushiImage.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: purple;
-  border: none;
-  color: white;
-  padding: 32px 32px;
-  text-shadow: 2px 2px #000000;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px
-}
-.sushi:hover {
-  opacity: 0.6;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  animation: fadeIn 2s;
-}
-.sushioptions {
-  text-align: center;
-}
 .checkout {
   text-align: center;
 }
+.dropdownTip {
+  margin-left: 20px;
+}
 .tip {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .payNow {
   background-color: purple;
@@ -334,6 +196,8 @@ body {
   display: inline-block;
   font-size: 20px;
   width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
