@@ -18,12 +18,14 @@
           <a href="#account" class="contact" v-on:click="pageName = 'account'" v-on:click="makeActive('account')">Account</a>
         </nav>
           <!--<p>You chose <b>{{active}}</b></p>-->
+      <div class="buttonContainer">
         <div class="buttonAlignSearch">
-          <button class="cart" v-on:click="pageName = 'myplate'">Plate ({{ cart.length }})</button>
+          <button class="cartSearchButton" v-on:click="pageName = 'myplate'">Plate ({{ cart.length }})</button>
         </div>
         <div class="buttonAlignSearch">
-          <button class="search">Search</button>
+          <button class="cartSearchButton">Search</button>
         </div>
+      </div>
           <!--<ul>
             <li v-for="foodItem in cart">{{ foodItem }}</li>
           </ul>-->
@@ -85,7 +87,7 @@
         </li>
       </ul>
           <p class="tip"> {{tip}} </p> <!--add a tip-->
-            <select class="dropdownTip" v-model="selected">
+            <select class="dropdownTip">
               <option class="buttonoptions" disabled value="">Please Add a Tip</option>
               <option>$3</option>
               <option>$4</option>
