@@ -186,7 +186,14 @@ body {
   text-align: center;
 }
 .dropdownTip {
-  margin-left: 20px;
+  border-radius: 10px;
+  background-color: Purple;
+  color: white;
+  padding: 30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-left: 25px;
 }
 .tip {
   margin-bottom: 5px;
