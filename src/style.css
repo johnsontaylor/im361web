@@ -213,18 +213,23 @@ body {
   text-align: center;
 }
 .McDonalds {
+  border-radius: 10px;
   background-image: url("./images/McDonalds_Image1-01.png");
 }
 .BurgerKing {
+  border-radius: 10px;
   background-image: url("./images/BurgerKing_Image2-01.png");
 }
 .Dominos {
+  border-radius: 10px;
   background-image: url("./images/Dominos_Image2-01.png");
 }
 .JJ {
+  border-radius: 10px;
   background-image: url("./images/JJ_Image2-01.png");
 }
 .Shogun {
+  border-radius: 10px;
   background-image: url("./images/Sushi_Image2-01.png");
 }
 .Restaurants {
