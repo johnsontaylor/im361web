@@ -54,7 +54,7 @@ h1 {
 .signInButtonAccount {
   border-radius: 30px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 h6 {
   margin-top: 0;
@@ -192,6 +192,8 @@ body {
   margin-bottom: 5px;
 }
 .payNow {
+  justify-content: center;
+  width: calc(100% - 40px);
   border-radius: 25px;
   background-color: purple;
   border: none;
@@ -201,13 +203,13 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  width: 100%;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
   margin-top: 10px;
 }
 .restaurantsContainer {
+  margin-top: 20px;
   text-align: center;
 }
 .McDonalds {
@@ -241,6 +243,7 @@ body {
   text-align: center;
 }
 .accountSignIn {
+  margin-top: 20px;
   align-content: center;
   background-color: #FFFFFF;
   border-radius: 25px;
