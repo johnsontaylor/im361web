@@ -9,7 +9,7 @@
   <body class="bodyMargin">
     <div id="app">
       <header>
-      <img class="imageWrap" src="./images/HeaderImage2-01-01.png"></img>
+      <img class="imageWrap" src="./images/HeaderImage2-01-01.png">
         <!--<h1><a href="#" class="ChopChop"><{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"> <img class="chopChopLogo" src="./images/chopChopLogo.png"</h1>-->
         <nav v-bind:class="active" v-on:click.prevent> <!--https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js-->
           <a href="#home" class="home" v-on:click="pageName = 'home'" v-on:click="makeActive('home')">Home</a>
@@ -99,21 +99,21 @@
   </main>
   <main class="accountContainer" v-bind:hidden="pageName != 'account'">
     <div class="accountSignIn">
-      <h2>Sign In<h2>
+      <h2>Sign In</h2>
       <h6>New to ChopChop? <span class="signUp" href="#">Sign Up</span></h6>
-      <a href="#"><img class="facebookGoogle" src="./images/facebookButton.png"></img></a>
-      <a href="#"><img class="facebookGoogle" src="./images/googleButton.png"></img></a>
-      <hr></hr>
+      <a href="#"><img class="facebookGoogle" src="./images/facebookButton.png"></a>
+      <a href="#"><img class="facebookGoogle" src="./images/googleButton.png"></a>
+      <hr>
       <h6>continue with email</h6>
         <form class="form">
           <label for="fname" class="emailPassword">Email</label>
           <input type="text" class="flName" name="fname">
         </form>
-      <form class="form">
-        <label for="lname" class="emailPassword">Password</label>
-        <input type="text" class="flName" name="lname" placeholder="SHOW">
-      <form>
-        <a href="#home" v-on:click="pageName = 'home'"><img class="signInButtonAccount" src="./images/signInButton.png"></img></a>
+        <form class="form">
+            <label for="lname" class="emailPassword">Password</label>
+            <input type="text" class="flName" name="lname" placeholder="SHOW">
+        </form>
+        <a href="#home" v-on:click="pageName = 'home'"><img class="signInButtonAccount" src="./images/signInButton.png"></a>
     </div>
   </main>
         <footer>
