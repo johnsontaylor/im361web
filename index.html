@@ -12,10 +12,10 @@
       <img class="imageWrap" src="./images/HeaderImage2-01-01.png">
         <!--<h1><a href="#" class="ChopChop"><{{ message }}</a><link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet"> <img class="chopChopLogo" src="./images/chopChopLogo.png"</h1>-->
         <nav v-bind:class="active" v-on:click.prevent> <!--https://tutorialzine.com/2016/03/5-practical-examples-for-learning-vue-js-->
-          <a href="#home" class="home" v-on:click="pageName = 'home'" v-on:click="makeActive('home')">Home</a>
-          <a href="#restaurants" class="projects" v-on:click="pageName = 'restaurants'" v-on:click="makeActive('restaurants')">Restaurants</a>
-          <a href="#myplate" class="services" v-on:click="pageName = 'myplate'" v-on:click="makeActive('myplate')">MyPlate</a>
-          <a href="#account" class="contact" v-on:click="pageName = 'account'" v-on:click="makeActive('account')">Account</a>
+          <a href="#home" class="home" v-on:click="pageName = 'home'">Home</a>
+          <a href="#restaurants" class="projects" v-on:click="pageName = 'restaurants'">Restaurants</a>
+          <a href="#myplate" class="services" v-on:click="pageName = 'myplate'">MyPlate</a>
+          <a href="#account" class="contact" v-on:click="pageName = 'account'">Account</a>
         </nav>
           <!--<p>You chose <b>{{active}}</b></p>-->
       <div class="buttonContainer">
